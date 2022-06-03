@@ -1,6 +1,4 @@
-## c'est le week-end
-
-Tableaux : méthodes fonctionnelles (map, forEach, filter, reduce);
+### Tableaux : méthodes fonctionnelles (map, forEach, filter, reduce)
 
 ## 1. Map
 
