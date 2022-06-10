@@ -154,3 +154,41 @@ Cette fonction sera rappelée par reduce avec les arguments suivants :
    **La valeur de l'element actuellement parcouru dans le tableau**, qui sera égale à 200 au premier tour de la boucle, puis 404, puis 430, et ainsi de suite...
 Cette fonction de rappel retourne la valeur de l'accumulateur pour l'itération suivante.
 La méthode reduce quand à elle retournera la valeur finale de l'accumulateur une fois les éléments parcourus.
+
+## 6. Includes
+
+**Méthode includes()**
+
+```javascript
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// expected output: true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
+```
+
+**Syntaxe**
+
+```javascript
+array.includes(élémentRecherché)
+array.includes(élémentRecherché, indiceDépart)
+```
+
+**élémentRecherché**
+
+La valeur qu'on souhaite trouver dans le tableau (lorsqu'on manipule des caractères et des chaînes, la comparaison est sensible à la casse).
+
+
+**indiceDépart**
+
+La position du tableau *à partir de laquelle* commencer à chercher élémentRecherché. *Si on utilise une valeur négative*, la recherche commencera à partir de la fin du tableau (autrement dit à l'indice array.length - indiceDépart). La valeur par défaut est 0.
+
+
+
