@@ -8,6 +8,7 @@
     *  déclarer avec **“this”** les attributs de la classe.
     *  créer une ou des **méthodes**.
 
+```javascript
       class Person {
         construtor(lastName, firstName) {
             this.lastName = lastName;
@@ -17,15 +18,19 @@
       sayHello() {
         console.log(`My name is ${this.firstName}`);
         }
-       }
+      }
+```
 
 + pour créer une instance d’une classe : 
 
+```javascript
       const john = new Person('John', 'Smith');
       john.sayHello();
+```
 
 + pour créer une classe **enfant** à partir d’une classe existante → **“extends”**.
 
+```javascript
       class Character{
         constructor(name, level) {
             this.name = name;
@@ -48,7 +53,7 @@
 
       const spider = new Enemy("Spider", 1, "🕷", "bites");
       console.log(spider.name);
-
+```
 + **“super”** pour reprendre les attributs de la classe parents
 + Il est possible de **surcharger** la classe en lui affectant 
     *   de **nouveaux attributs** : this.__*** = ***__
