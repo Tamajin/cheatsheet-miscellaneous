@@ -12,7 +12,7 @@ getElementsByClassName() - Sélectionne tous les éléments avec la classe entre
 
 querySelector() - Sélectionne un seul élément : celui avec le sélecteur entre parenthèses
 
-querySelectorAll() - Sélectionne tous les éléments avec le sélecteur entre parenthèses
+querySelectorAll() - Sélectionne tous les éléments avec le sélecteur entre parenthèses (attention crée un tableau !)
 
 
 
