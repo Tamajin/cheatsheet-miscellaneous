@@ -126,7 +126,7 @@ console.log(myArray.some(element => element > 30)); // true
 ```
 
 
-## 5. Reduce
+## 6. Reduce
 
 **Méthode reduce()**
 
@@ -155,7 +155,7 @@ Cette fonction sera rappelée par reduce avec les arguments suivants :
 Cette fonction de rappel retourne la valeur de l'accumulateur pour l'itération suivante.
 La méthode reduce quand à elle retournera la valeur finale de l'accumulateur une fois les éléments parcourus.
 
-## 6. Includes
+## 7. Includes
 
 **Méthode includes()**
 
