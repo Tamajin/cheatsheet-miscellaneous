@@ -23,3 +23,5 @@ Package.Json
 “scripts”: {
 “start”: “node index.js”
 },
+
+https://www.codecademy.com/learn/learn-node-js/modules/intro-to-node-js/cheatsheet
