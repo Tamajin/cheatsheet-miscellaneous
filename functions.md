@@ -159,6 +159,8 @@ La méthode reduce quand à elle retournera la valeur finale de l'accumulateur u
 
 **Méthode includes()**
 
+Cette méthode vérifie si le tableau inclut l’élément passé dans la méthode.
+
 ```javascript
 const array1 = [1, 2, 3];
 
