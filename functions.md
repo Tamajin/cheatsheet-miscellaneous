@@ -1,4 +1,4 @@
-# Tableaux : méthodes fonctionnelles (map, forEach, filter, every, some, reduce)
+# Tableaux : méthodes fonctionnelles (map, forEach, filter, every, some, reduce, includes)
 
 ## 1. Map
 
