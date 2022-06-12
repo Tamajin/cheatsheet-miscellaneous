@@ -1,48 +1,81 @@
 ## Fiche sur les fonctions intéressantes liées au DOM
 
-## _Voici une fiche résumant l'ensemble des fonctions et propriétés principales liées au DOM._
-
 ## Accéder aux éléments
 
-getElementsByTagName() - Sélectionne tous les éléments avec la balise entre parenthèses
+`document.getElementsByTagName("baliseHTML")` - Sélectionne tous les éléments avec la balise entre parenthèses
 
-getElementById() - Sélectionne un seul élément : le premier ayant l'ID entre parenthèses
+`document.getElementById("#Id")` - Sélectionne un seul élément : le premier ayant l'ID entre parenthèses
 
-getElementsByClassName() - Sélectionne tous les éléments avec la classe entre parenthèses
+`document.getElementsByClassName(".className")` - Sélectionne tous les éléments avec la classe entre parenthèses et les retournent dans un tableaux
 
-querySelector() - Sélectionne un seul élément : celui avec le sélecteur entre parenthèses
+`document.querySelector("element")` - Sélectionne un seul élément : celui avec le sélecteur entre parenthèses
 
-querySelectorAll() - Sélectionne tous les éléments avec le sélecteur entre parenthèses (attention crée un tableau !)
-
+`document.querySelectorAll("element")` - Sélectionne tous les éléments avec le sélecteur entre parenthèses (attention crée un tableau !)
 
 
 ## Modifier les éléments
 
-textContent - Modifie le texte d'un élément
+`element.innertext` - Modifie le texte d'un élément
 
-innerHTML - Modifie l'HTML d'un élément
-
-
+`element.innerHTML` - Modifie l'HTML d'un élément
 
 ## Ajouter et supprimer des éléments
 
-createElement() - Crée un élément
+`document.createElement("tagName")` - Crée un élément
 
-prepend() - Ajoute l'élément entre parenthèses devant l'élément cible
+`element.prepend("texte ou balise html")` - Ajoute l'élément entre parenthèses devant l'élément cible
 
-append() - Ajouter l'élément entre parenthèses derrière l'élément cible (peut contenir du texte)
+**exemple**
+Ajouter du texte
+```javascript
+let div = document.createElement("div");
+div.append("Du texte");
+div.prepend("Titre : ");
 
-appendChild() - Ajouter l'élément entre parenthèses derrière l'élément cible (ne peut pas contenir du texte)
+console.log(div.textContent); // "Titre : Du texte"
+```
 
-insertBefore() - Insère un élément avant l'élément cible
+`element.append()` - Ajouter l'élément entre parenthèses derrière l'élément cible (peut contenir du texte)
 
+**exemple**
+Voir ci dessus
+
+`elementparent.appendChild(enfant)` - Ajouter l'élément entre parenthèses derrière l'élément cible (ne peut pas contenir du texte)
 
 
 ## Modifier le style d'un élément
 
-style.propriété - Modifie la propriété CSS spécifiée, par exemple : style.color = "orange"
+`element.style.propriété` - Modifie la propriété CSS spécifiée
 
-className - Modifie les classes d'un élément
+**exemple**
+Modifier la couleur du texte en orange d'une div avec une classe "madiv"
+```javascript
+let maDiv = document.querySelector(".madiv") //on stocke la div dans une variable
+maDiv.style.color = "orange" //on modifie la couleur en orange
+```
+
+## Ajouter ou supprimer une classe à un élement
+
+### Ajouter une classe
+
+`element.className.add("ClassName)`
+
+**exemple**
+Ajouter la classe "superdiv" à une div qui a déjà la class "madiv"
+```javascript
+let maDiv = document.querySelector(".madiv") //on stocke la div dans une variable
+maDiv.className.add = "superdiv" //on y ajoute la classe "superdiv"
+```
+
+### Supprimer une classe
+
+`element.className.remove("ClassName)`
+
+**exemple**
+Supprimer la classe "superdiv" ajoutée dans l'exemple précédent
+```javascript
+maDiv.className.remove = "superdiv" //on supprime la classe "superdiv" de la variable maDiv
+```
 
 
 
