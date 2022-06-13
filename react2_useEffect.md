@@ -69,3 +69,34 @@ function Message() {
     return <h1>Coucou les Click'n Mousse<h1>;
 }
 ```
+
+## 3. Les dépendances
+
+L’utilisation du deuxième paramètre du hook useEffect va nous permettre de faire une utilisation plus fine de cet effet de bord “contrôlé” : la liste de dépendances de notre hook.
+Ces dépendances sont des valeurs que le useEffect va étudier à chaque re-render. Si les valeurs listées ne sont pas modifiées, le useEffect ne sera pas déclenché. Si au contraire, la valeur d’une des dépendances listées a changé le useEffect sera bien déclenché.
+
+**exemple**
+
+Voici un exemple, avec ce coup-ci le deuxième paramètre dans notre useEffect ainsi qu’un autre useState qui viendra causer un re-render de notre composant :
+
+```javascript
+const MonComposant = () => {
+  const [shouldLog, setShouldLog] = useState(false);
+  const [isWhatever, setIsWhatever] = useState(false);
+
+  useEffect(() => {
+    // N'est jamais appelé lors que l'utilisateur clique sur "Rafraîchir"
+    if (shouldLog) {
+      console.log('Coucou !');
+    }
+  }, [shouldLog]);
+
+  return (
+    <div>
+      <button onClick={() => setShouldLog(true)}>Afficher</button>
+      <button onClick={() => setIsWhatever(!isWhatever)}>Rafraîchir</button>
+    </div>
+  );
+};
+```
+>Ici, le fait d’avoir listé dans le deuxième paramètre de notre useEffect la dépendance shouldLog fait que le code à l’intérieur n’est appelé que si shouldLog change. Si l’utilisateur clique sur le bouton “Rafraîchir”, rien ne sera affiché dans la console.
