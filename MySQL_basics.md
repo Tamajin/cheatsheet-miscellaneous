@@ -28,6 +28,12 @@ L’usage le plus fréquent consiste à créer une colonne numérique qui s’in
 
 ## 2. Créer et utiliser une base de données
 
+Avant toute choses, il faut se connecter à mysql. Dans le terminal:
+```
+mysql -u <identifiant> -p
+```
+Votre mot de passe vous sera alors demandé.
+
 Étape 1 : créer une base de donnée:
 
 **syntaxe**
