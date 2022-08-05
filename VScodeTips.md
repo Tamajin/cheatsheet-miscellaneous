@@ -43,7 +43,7 @@ Une fois ouvert le contenu devrait ressembler à ceci[^bignote] :
 ```
 Copiez ces quelques lignes dans votre propre fichier settings.json et vous serez prêts pour la suite.
 
-## Raccourcis généraux
+## Raccourcis généraux.
 
 Ici, quelques astuces valables quel que soit le langage utilisé, que vous soyez ou non dans un projet __React__.
 1. Remplacer rapidement du texte.
@@ -55,3 +55,9 @@ VSCode a la solution ! Sélectionnez le texte à modifier puis faites un **CTRL+
 Très simplement, placez-vous sur la ligne à déplacer (ou sélectionnez un bloc de lignes) et combinez **ALT + ⬆️ ou⬇️** selon que vous voulier monter ou descendre dans votre code. C'est la fin des copier/coller pour déplacer une balise HTML fermée par l'autocomplétion !
 Si vous combinez **ALT + SHIFT + ⬆️ ou⬇️**  vous copierez cette fois la zone de texte sélectionnée.
 >peut notamment s'avérer très utile en CSS pour reprendre tout un style, en changeant seulement le sélecteur, ou pour copier des zones **HTML** tout en les positionnant à l'endroit souhaité.
+
+
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job.)
+
+   [ES7+ React/Redux/React-Native snippets]: <https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets>
